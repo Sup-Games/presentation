@@ -3,9 +3,9 @@
 #EagleRecipes.eg-theme-gourmet
   .eg-slideshow
     v-slide
-      h1 Eagle Recipes
+      h1 MMORTS Design<br/>Technical Document
       img.logo(src='./eagle-jam.png')
-      p.center 100% Pure Code, no Artificial Swag
+      p.center A Procedural Universe
 
     v-slide
       h3 Getting started
@@ -220,8 +220,8 @@ export default {
     }
   },
   infos: {
-    title: 'Eagle recipes',
-    description: 'For yummy presentations',
+    title: 'A Procedural Universe',
+    description: 'Brief technical document',
     path: 'eagle-recipes'
   },
   components: {
@@ -242,6 +242,7 @@ export default {
   }
   h1 {
     margin-top: 0em;
+    font-size: medium;
   }
   .logo {
     display: block;

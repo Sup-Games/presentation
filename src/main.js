@@ -6,12 +6,14 @@ import Home from './Home'
 import Eagle, { Options } from 'eagle.js'
 import 'eagle.js/dist/eagle.css'
 import hljs from 'highlight.js'
+import AudioVisual from 'vue-audio-visual'
 
 import slideshows from './slideshows/slideshows.js'
 /* eslint-disable no-new */
 
 Vue.use(Eagle)
 Vue.use(Router)
+Vue.use(AudioVisual)
 Vue.config.productionTip = false
 Options.hljs = hljs
 

@@ -3,9 +3,9 @@
   .eg-slideshow
     slide(enter='fadeIn' leave='bounceOutLeft')
       .center.frontpage
-        h1 Eagle.js
+        h1 Sup`GAMES
         img(src='./assets/logo.svg')
-        h4 A Slideshow Framework for Vue.js
+        h4 A specialization and lab project from Supinfo
         eg-triggered-message(:trigger='slideTimer >= 2',
                             :duration='6', position='top right',
                             enter='bounceInRight', leave='bounceOutRight')
@@ -14,48 +14,57 @@
           p Previous:
           img.control-schema(src='./assets/controlsPrev.svg')
 
-    slide(:steps=4, enter='bounceInRight' leave='bounceOutDown')
+    slide(:steps=7, enter='bounceInRight' leave='bounceOutDown')
       h3
-        | Vue
+        | Project
         .inline(class='animated infinite pulse heart')
-        | slideshows
+        | Introduction
       .center
         eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
           p(v-if="step >= 2")
-            <b>Vue.js</b> is one of the coolest frontend frameworks out there
+            <b>Sup`GAMES</b> will first introduce step by step courses on subjects to make games
         eg-transition(enter='bounceInRight' leave='bounceOutRight')
           p(v-if="step >= 3")
-            <b>Vue.js</b> supports components and transitions out of the box
+            <b>These courses</b> will be done by the students, followed by some full-teachers
         eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
           p(v-if="step >= 4")
-            <b>Eagle.js</b> adds navigation logics, scalable components, etc.
+            <b>At the same time</b> we will develop a space MMORTS game for the long-term
+        eg-transition(enter='bounceInRight' leave='bounceOutRight')
+          p(v-if="step >= 5")
+            <b>We will</b> also constitute a Game Lab, to share techniques & build smaller games
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 6")
+            <b>Teams</b> will be defined, regarding all aspects of a game development
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 7")
+            <b>This game project</b> will be open source and available as well to external peoples
 
     slide(:steps=6, enter='bounceInDown')
-      h3 What's in it for you
+      h3 What's the human needs?
 
       eg-transition(enter='fadeIn' leave='fadeOut')
         .quarter(v-if='step >=2')
           img(src='./assets/icons/basic_paperplane.svg')
-          h4 EASE OF USE
-          p Clear syntax, live preview
+          h4 ALL CURSUS
+          p SiiT, SiiB, SiaD, SicM
 
       eg-transition(enter='fadeIn' leave='fadeOut')
         .quarter(v-if='step >=3')
           img(src='./assets/icons/basic_share.svg')
-          h4 MODULARITY
-          p Reuse slides and styles
+          h4 ALL CAMPUS
+          p Physical, International, Virtual
 
       eg-transition(enter='fadeIn' leave='fadeOut')
         .quarter(v-if="step >= 4")
          img(src='./assets/icons/basic_mixer2.svg')
-         h4 INTERACTIVITY
-         p Embed forms and live demos
+         h4 MANY TOPICS
+         p Art, Dev, Design, Marketing, Story, ...
 
       eg-transition(enter='fadeIn' leave='fadeOut')
         .quarter(v-if="step >= 5")
           img(src='./assets/icons/basic_display.svg')
-          h4 PORTABILITY
-          p Play in any browser
+          h4 BRAINS IN ACTION
+          p Thoughts and Regular meetings
 
       eg-transition(enter='fadeIn' leave='fadeOut')
         eg-modal(v-if='step >= 6')
@@ -122,8 +131,6 @@
         span Next slide &gt;
         br
         span.small Ctrl + right
-
-    themes-slideshow(:skip="!slideCategories.themes.show", :inserted='true', firstSlide=3)
 
     awesome-inserted-slide(:username='username', :preference='preference',
                            enter='fadeIn', leave='hinge',
@@ -222,15 +229,14 @@ import eagle from 'eagle.js'
 export default {
   mixins: [eagle.slideshow],
   infos: {
-    title: 'Introducing Eagle.js',
-    description: 'Watch this first if you are new to Eagle.js',
+    title: 'Introducing Sup`GAMES',
+    description: 'Specialization & Lab',
     path: 'introducing-eagle'
   },
   components: {
     'awesome-inserted-slide': require('./AwesomeInsertedSlide').default,
     'figures-slide': require('./FiguresSlide').default,
-    'end-credits': require('./components/EndCredits').default,
-    'themes-slideshow': require('../themes-slideshow/ThemesSlideshow').default
+    'end-credits': require('./components/EndCredits').default
   },
   data: function () {
     return {
