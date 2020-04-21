@@ -17,7 +17,7 @@
     "animate.css": "^3.7.0",
     "chart.js": "2.5.0",
     "eagle.js": "^0.4.1",
-    "highlight.js": "^9.12.0",
+    "highlight.js": "^9.18.1",
     "vue": "^2.1.10",
     "vue-audio-visual": "^1.4.1",
     "vue-router": "^2.2.0"
@@ -27,7 +27,7 @@
     "@vue/cli-plugin-eslint": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "@vue/eslint-config-standard": "^3.0.4",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",

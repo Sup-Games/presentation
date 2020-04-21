@@ -9,8 +9,8 @@
       h2 A specialization and lab project from Supinfo
 
       iframe.github-star(src="https://ghbtns.com/github-btn.html?user=Sup-Games&repo=ekynox&type=star&count=true&size=large"
-        frameborder="0" scrolling="0" width="160px" height="30px")
-      p.centered Sup`GAMES aim is to work on the development of a specialization<br/> and a lab available from the first year of master at Supinfo.<br/> To this end, we have prepared a game design for a long-term spatial strategy game development around procedural generation, voxels, and lots more...<br/><strong style="color: orangered;">We need you! A Supinfo student from all branches (SiiB, SiiT, ...) to join us!</strong>
+        frameborder="0" scrolling="0" width="125px" height="30px")
+      p.centered Sup`GAMES aim is to work on the development of a specialization<br/> and a lab available from the first year of master at Supinfo.<br/> To this end, we have prepared a game design for a long-term spatial strategy<br/>game development around procedural generation, voxels, and lots more...<br/><strong style="color: orangered;">We need you! A Supinfo student from all branches (SiiB, SiiT, ...) to join us!</strong>
 
       .thumbnails
         .box-card(v-for='slideshow in slideshows')
@@ -61,27 +61,28 @@ export default {
 
   h1, h2, h3, h4, p {
     font-weight: normal;
-    font-family: 'Patrick Hand SC'
+    font-family: 'Patrick Hand SC';
   }
 
   h1 {
     font-size: 8em;
-    margin-top: 0.2em;
+    margin-top: 0;
     margin-bottom: 0;
     line-height: 0.8em;
     text-align: center;
   }
+
   h2 {
     font-size: 2.2em;
-    margin-top: 0.4em;
+    margin-top: 10px;
     margin-bottom: 2em;
     line-height: 0.8em;
     text-align: center;
   }
 
   p {
-    margin-top: 1.5em;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 18px;
   }
 
   .centered {
@@ -98,7 +99,7 @@ export default {
 
   .box-card {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     .embedded-slideshow-container {
       position: relative;
       width: 150px;
@@ -132,7 +133,7 @@ export default {
   .github-star {
     display: block;
     margin: 0 auto;
-    margin-top: -30px;
+    margin-top: -50px;
   }
 
   .center {
